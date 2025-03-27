@@ -1,0 +1,1096 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='pivoted_avg_reimbursement' inline='true' name='federated.178orao0z82ku41fk2zo003v98og' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pivoted_avg_reimbursement' name='textscan.13gka820w5x7wl1clv3iq1t37dpy'>
+            <connection class='textscan' directory='C:/Users/kikas/Downloads' filename='pivoted_avg_reimbursement.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.13gka820w5x7wl1clv3iq1t37dpy' name='pivoted_avg_reimbursement.csv' table='[pivoted_avg_reimbursement#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Provider' ordinal='0' />
+            <column datatype='integer' name='Fraud' ordinal='1' />
+            <column datatype='string' name='Claim Type' ordinal='2' />
+            <column datatype='real' name='Average Reimbursement' ordinal='3' />
+            <column datatype='string' name='Fraud Label' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pivoted_avg_reimbursement.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Provider</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Provider]</local-name>
+            <parent-name>[pivoted_avg_reimbursement.csv]</parent-name>
+            <remote-alias>Provider</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fraud</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fraud]</local-name>
+            <parent-name>[pivoted_avg_reimbursement.csv]</parent-name>
+            <remote-alias>Fraud</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Claim Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Claim Type]</local-name>
+            <parent-name>[pivoted_avg_reimbursement.csv]</parent-name>
+            <remote-alias>Claim Type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Reimbursement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Reimbursement]</local-name>
+            <parent-name>[pivoted_avg_reimbursement.csv]</parent-name>
+            <remote-alias>Average Reimbursement</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fraud Label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fraud Label]</local-name>
+            <parent-name>[pivoted_avg_reimbursement.csv]</parent-name>
+            <remote-alias>Fraud Label</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Fraud Label]' role='dimension' type='nominal' />
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Provider]' role='dimension' type='nominal' />
+      <column caption='pivoted_avg_reimbursement.csv' datatype='table' name='[__tableau_internal_object_id__].[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]' role='measure' type='quantitative' />
+      <column-instance column='[Fraud Label]' derivation='None' name='[none:Fraud Label:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kikas/AppData/Local/Temp/TableauTemp/#TableauTemp_1ed7w5c18bl9v11bbj6pm0z0ggxp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/25/2025 07:50:51 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Provider</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Provider]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Provider</remote-alias>
+              <ordinal>0</ordinal>
+              <family>pivoted_avg_reimbursement.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4083</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fraud</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fraud]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fraud</remote-alias>
+              <ordinal>1</ordinal>
+              <family>pivoted_avg_reimbursement.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Claim Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Claim Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Claim Type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>pivoted_avg_reimbursement.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Average Reimbursement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Average Reimbursement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Average Reimbursement</remote-alias>
+              <ordinal>3</ordinal>
+              <family>pivoted_avg_reimbursement.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2656</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fraud Label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fraud Label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fraud Label</remote-alias>
+              <ordinal>4</ordinal>
+              <family>pivoted_avg_reimbursement.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Fraud Label:nk]' type='palette'>
+            <map to='#309143'>
+              <bucket>&quot;Non-Fraudulent&quot;</bucket>
+            </map>
+            <map to='#b60a1c'>
+              <bucket>&quot;Fraudulent&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='pivoted_avg_reimbursement.csv' id='pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241'>
+            <properties context=''>
+              <relation connection='textscan.13gka820w5x7wl1clv3iq1t37dpy' name='pivoted_avg_reimbursement.csv' table='[pivoted_avg_reimbursement#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Provider' ordinal='0' />
+                  <column datatype='integer' name='Fraud' ordinal='1' />
+                  <column datatype='string' name='Claim Type' ordinal='2' />
+                  <column datatype='real' name='Average Reimbursement' ordinal='3' />
+                  <column datatype='string' name='Fraud Label' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='final_dataset_for_tableau' inline='true' name='federated.0j54wjy1vyi7h81cuea9g0sxngjz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='final_dataset_for_tableau' name='textscan.1typ7vr0ll99s91ghqi0f0qrrn4v'>
+            <connection class='textscan' directory='C:/Users/kikas/OneDrive/projects/Capstone Project - HealthInsurance Fraud/notebooks' filename='final_dataset_for_tableau.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1typ7vr0ll99s91ghqi0f0qrrn4v' name='final_dataset_for_tableau.csv' table='[final_dataset_for_tableau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Provider' ordinal='0' />
+            <column datatype='string' name='PotentialFraud' ordinal='1' />
+            <column datatype='integer' name='Fraud' ordinal='2' />
+            <column datatype='integer' name='InpatientClaimCount' ordinal='3' />
+            <column datatype='real' name='AvgInpatientReimbursement' ordinal='4' />
+            <column datatype='real' name='TotalInpatientReimbursement' ordinal='5' />
+            <column datatype='real' name='AvgInpatientDeductible' ordinal='6' />
+            <column datatype='real' name='AvgLengthOfStay' ordinal='7' />
+            <column datatype='integer' name='OutpatientClaimCount' ordinal='8' />
+            <column datatype='real' name='AvgOutpatientReimbursement' ordinal='9' />
+            <column datatype='real' name='TotalOutpatientReimbursement' ordinal='10' />
+            <column datatype='real' name='AvgOutpatientDeductible' ordinal='11' />
+            <column datatype='integer' name='TotalClaimCount' ordinal='12' />
+            <column datatype='real' name='TotalReimbursement' ordinal='13' />
+            <column datatype='real' name='InpatientToOutpatientRatio' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Provider</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Provider]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>Provider</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PotentialFraud</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PotentialFraud]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>PotentialFraud</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fraud</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fraud]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>Fraud</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InpatientClaimCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InpatientClaimCount]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>InpatientClaimCount</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgInpatientReimbursement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgInpatientReimbursement]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>AvgInpatientReimbursement</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalInpatientReimbursement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalInpatientReimbursement]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>TotalInpatientReimbursement</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgInpatientDeductible</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgInpatientDeductible]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>AvgInpatientDeductible</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgLengthOfStay</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgLengthOfStay]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>AvgLengthOfStay</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OutpatientClaimCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OutpatientClaimCount]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>OutpatientClaimCount</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgOutpatientReimbursement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgOutpatientReimbursement]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>AvgOutpatientReimbursement</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalOutpatientReimbursement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalOutpatientReimbursement]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>TotalOutpatientReimbursement</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgOutpatientDeductible</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgOutpatientDeductible]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>AvgOutpatientDeductible</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalClaimCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalClaimCount]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>TotalClaimCount</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalReimbursement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalReimbursement]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>TotalReimbursement</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InpatientToOutpatientRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[InpatientToOutpatientRatio]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>InpatientToOutpatientRatio</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Avg Inpatient Deductible' datatype='real' name='[AvgInpatientDeductible]' role='measure' type='quantitative' />
+      <column caption='Avg Inpatient Reimbursement' datatype='real' name='[AvgInpatientReimbursement]' role='measure' type='quantitative' />
+      <column caption='Avg Length Of Stay' datatype='real' name='[AvgLengthOfStay]' role='measure' type='quantitative' />
+      <column caption='Avg Outpatient Deductible' datatype='real' name='[AvgOutpatientDeductible]' role='measure' type='quantitative' />
+      <column caption='Avg Outpatient Reimbursement' datatype='real' name='[AvgOutpatientReimbursement]' role='measure' type='quantitative' />
+      <column caption='Fraud Label' datatype='string' name='[Calculation_1888415679696351234]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Fraud] = 1 THEN &quot;Fraudulent&quot; ELSE &quot;Non-Fraudulent&quot; END' />
+      </column>
+      <column caption='Inpatient Claim Count' datatype='integer' name='[InpatientClaimCount]' role='measure' type='quantitative' />
+      <column caption='Inpatient To Outpatient Ratio' datatype='real' name='[InpatientToOutpatientRatio]' role='measure' type='quantitative' />
+      <column caption='Outpatient Claim Count' datatype='integer' name='[OutpatientClaimCount]' role='measure' type='quantitative' />
+      <column caption='Potential Fraud' datatype='string' name='[PotentialFraud]' role='dimension' type='nominal' />
+      <column caption='Total Claim Count' datatype='integer' name='[TotalClaimCount]' role='measure' type='quantitative' />
+      <column caption='Total Inpatient Reimbursement' datatype='real' name='[TotalInpatientReimbursement]' role='measure' type='quantitative' />
+      <column caption='Total Outpatient Reimbursement' datatype='real' name='[TotalOutpatientReimbursement]' role='measure' type='quantitative' />
+      <column caption='Total Reimbursement' datatype='real' name='[TotalReimbursement]' role='measure' type='quantitative' />
+      <column caption='final_dataset_for_tableau.csv' datatype='table' name='[__tableau_internal_object_id__].[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1888415679696351234]' derivation='None' name='[none:Calculation_1888415679696351234:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kikas/AppData/Local/Temp/TableauTemp/#TableauTemp_1nzkq8f0l5j9471fs9by01vl1stg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/25/2025 07:51:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Provider</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Provider]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Provider</remote-alias>
+              <ordinal>0</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5410</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PotentialFraud</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PotentialFraud]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PotentialFraud</remote-alias>
+              <ordinal>1</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fraud</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fraud]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fraud</remote-alias>
+              <ordinal>2</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InpatientClaimCount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[InpatientClaimCount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InpatientClaimCount</remote-alias>
+              <ordinal>3</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>122</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AvgInpatientReimbursement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AvgInpatientReimbursement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AvgInpatientReimbursement</remote-alias>
+              <ordinal>4</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>585</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalInpatientReimbursement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalInpatientReimbursement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalInpatientReimbursement</remote-alias>
+              <ordinal>5</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>442</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AvgInpatientDeductible</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AvgInpatientDeductible]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AvgInpatientDeductible</remote-alias>
+              <ordinal>6</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AvgLengthOfStay</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AvgLengthOfStay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AvgLengthOfStay</remote-alias>
+              <ordinal>7</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>497</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OutpatientClaimCount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OutpatientClaimCount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OutpatientClaimCount</remote-alias>
+              <ordinal>8</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>426</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AvgOutpatientReimbursement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AvgOutpatientReimbursement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AvgOutpatientReimbursement</remote-alias>
+              <ordinal>9</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2266</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalOutpatientReimbursement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalOutpatientReimbursement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalOutpatientReimbursement</remote-alias>
+              <ordinal>10</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1740</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AvgOutpatientDeductible</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AvgOutpatientDeductible]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AvgOutpatientDeductible</remote-alias>
+              <ordinal>11</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1051</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalClaimCount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalClaimCount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalClaimCount</remote-alias>
+              <ordinal>12</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>438</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalReimbursement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalReimbursement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalReimbursement</remote-alias>
+              <ordinal>13</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2224</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InpatientToOutpatientRatio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[InpatientToOutpatientRatio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InpatientToOutpatientRatio</remote-alias>
+              <ordinal>14</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>580</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_1888415679696351234:nk]' type='palette'>
+            <map to='#51b364'>
+              <bucket>&quot;Non-Fraudulent&quot;</bucket>
+            </map>
+            <map to='#b60a1c'>
+              <bucket>&quot;Fraudulent&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='final_dataset_for_tableau.csv' id='final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48'>
+            <properties context=''>
+              <relation connection='textscan.1typ7vr0ll99s91ghqi0f0qrrn4v' name='final_dataset_for_tableau.csv' table='[final_dataset_for_tableau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Provider' ordinal='0' />
+                  <column datatype='string' name='PotentialFraud' ordinal='1' />
+                  <column datatype='integer' name='Fraud' ordinal='2' />
+                  <column datatype='integer' name='InpatientClaimCount' ordinal='3' />
+                  <column datatype='real' name='AvgInpatientReimbursement' ordinal='4' />
+                  <column datatype='real' name='TotalInpatientReimbursement' ordinal='5' />
+                  <column datatype='real' name='AvgInpatientDeductible' ordinal='6' />
+                  <column datatype='real' name='AvgLengthOfStay' ordinal='7' />
+                  <column datatype='integer' name='OutpatientClaimCount' ordinal='8' />
+                  <column datatype='real' name='AvgOutpatientReimbursement' ordinal='9' />
+                  <column datatype='real' name='TotalOutpatientReimbursement' ordinal='10' />
+                  <column datatype='real' name='AvgOutpatientDeductible' ordinal='11' />
+                  <column datatype='integer' name='TotalClaimCount' ordinal='12' />
+                  <column datatype='real' name='TotalReimbursement' ordinal='13' />
+                  <column datatype='real' name='InpatientToOutpatientRatio' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Claim count by Fraud Status'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution of Total Claim Count by Fraud Status</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_dataset_for_tableau' name='federated.0j54wjy1vyi7h81cuea9g0sxngjz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j54wjy1vyi7h81cuea9g0sxngjz'>
+            <column caption='Fraud Label' datatype='string' name='[Calculation_1888415679696351234]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Fraud] = 1 THEN &quot;Fraudulent&quot; ELSE &quot;Non-Fraudulent&quot; END' />
+            </column>
+            <column datatype='integer' name='[Fraud]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Provider]' role='dimension' type='nominal' />
+            <column caption='Total Claim Count' datatype='integer' name='[TotalClaimCount]' role='measure' type='quantitative' />
+            <column-instance column='[TotalClaimCount]' derivation='CountD' name='[ctd:TotalClaimCount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1888415679696351234]' derivation='None' name='[none:Calculation_1888415679696351234:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Provider]' derivation='None' name='[none:Provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TotalClaimCount]' derivation='None' name='[none:TotalClaimCount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]' value='382' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]' />
+              <lod column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Provider:nk]' />
+              <tooltip column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[ctd:TotalClaimCount:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:TotalClaimCount:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:TotalClaimCount:qk]' z-order='1' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:TotalClaimCount:qk]</rows>
+        <cols>[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]</cols>
+      </table>
+      <simple-id uuid='{BD9CFB4D-1596-49AF-850B-0F286BE840A3}' />
+    </worksheet>
+    <worksheet name='Distribution Fraud vs Non-Fraud'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution of Fraudulent vs Non-Fraudulent Providers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pivoted_avg_reimbursement' name='federated.178orao0z82ku41fk2zo003v98og' />
+          </datasources>
+          <datasource-dependencies datasource='federated.178orao0z82ku41fk2zo003v98og'>
+            <column datatype='string' name='[Fraud Label]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Provider]' role='dimension' type='nominal' />
+            <column-instance column='[Fraud Label]' derivation='None' name='[none:Fraud Label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Provider]' derivation='CountD' name='[pcto:ctd:Provider:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]' value='219' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.178orao0z82ku41fk2zo003v98og].[pcto:ctd:Provider:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.178orao0z82ku41fk2zo003v98og].[pcto:ctd:Provider:qk]</rows>
+        <cols>[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]</cols>
+      </table>
+      <simple-id uuid='{CE66D05C-5497-4FE9-9369-661773352ACB}' />
+    </worksheet>
+    <worksheet name='Inpatient to Outpatient Ratio by Fraud Status'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_dataset_for_tableau' name='federated.0j54wjy1vyi7h81cuea9g0sxngjz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j54wjy1vyi7h81cuea9g0sxngjz'>
+            <column caption='Fraud Label' datatype='string' name='[Calculation_1888415679696351234]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Fraud] = 1 THEN &quot;Fraudulent&quot; ELSE &quot;Non-Fraudulent&quot; END' />
+            </column>
+            <column datatype='integer' name='[Fraud]' role='measure' type='quantitative' />
+            <column caption='Inpatient To Outpatient Ratio' datatype='real' name='[InpatientToOutpatientRatio]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Provider]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1888415679696351234]' derivation='None' name='[none:Calculation_1888415679696351234:nk]' pivot='key' type='nominal' />
+            <column-instance column='[InpatientToOutpatientRatio]' derivation='None' name='[none:InpatientToOutpatientRatio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Provider]' derivation='None' name='[none:Provider:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]' value='340' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]' />
+              <lod column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Provider:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:InpatientToOutpatientRatio:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:InpatientToOutpatientRatio:qk]' z-order='1' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:InpatientToOutpatientRatio:qk]</rows>
+        <cols>[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]</cols>
+      </table>
+      <simple-id uuid='{01B0A099-6B84-47F3-9018-5B8071C313EF}' />
+    </worksheet>
+    <worksheet name='Reimbursement by Claim and Fraud Status'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Reimbursement by Claim Type and Fraud Status</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pivoted_avg_reimbursement' name='federated.178orao0z82ku41fk2zo003v98og' />
+          </datasources>
+          <datasource-dependencies datasource='federated.178orao0z82ku41fk2zo003v98og'>
+            <column datatype='real' name='[Average Reimbursement]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Claim Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Fraud Label]' role='dimension' type='nominal' />
+            <column-instance column='[Average Reimbursement]' derivation='Avg' name='[avg:Average Reimbursement:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Claim Type]' derivation='None' name='[none:Claim Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fraud Label]' derivation='None' name='[none:Fraud Label:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]' value='220' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.178orao0z82ku41fk2zo003v98og].[avg:Average Reimbursement:qk]</rows>
+        <cols>([federated.178orao0z82ku41fk2zo003v98og].[none:Claim Type:nk] / [federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk])</cols>
+      </table>
+      <simple-id uuid='{A4AC8387-6D74-47E7-8997-F5426DF04FCF}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='75'>
+    <window class='worksheet' name='Distribution Fraud vs Non-Fraud'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FFB917B8-6DD3-4C89-8370-0C7E50A6E0E0}' />
+    </window>
+    <window class='worksheet' name='Reimbursement by Claim and Fraud Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D14B8473-1E1C-4A59-8DFE-D4EA5490FB76}' />
+    </window>
+    <window class='worksheet' name='Claim count by Fraud Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{648AB34E-1166-4C5E-B285-A6DEEEA52444}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Inpatient to Outpatient Ratio by Fraud Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3EE90C59-DFE2-4E27-A5E1-84F15E6E6B49}' />
+    </window>
+  </windows>
+</workbook>

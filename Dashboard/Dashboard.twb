@@ -1,0 +1,1639 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='pivoted_avg_reimbursement' inline='true' name='federated.178orao0z82ku41fk2zo003v98og' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pivoted_avg_reimbursement' name='textscan.13gka820w5x7wl1clv3iq1t37dpy'>
+            <connection class='textscan' directory='C:/Users/kikas/Downloads' filename='pivoted_avg_reimbursement.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.13gka820w5x7wl1clv3iq1t37dpy' name='pivoted_avg_reimbursement.csv' table='[pivoted_avg_reimbursement#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Provider' ordinal='0' />
+            <column datatype='integer' name='Fraud' ordinal='1' />
+            <column datatype='string' name='Claim Type' ordinal='2' />
+            <column datatype='real' name='Average Reimbursement' ordinal='3' />
+            <column datatype='string' name='Fraud Label' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pivoted_avg_reimbursement.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Provider</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Provider]</local-name>
+            <parent-name>[pivoted_avg_reimbursement.csv]</parent-name>
+            <remote-alias>Provider</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fraud</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fraud]</local-name>
+            <parent-name>[pivoted_avg_reimbursement.csv]</parent-name>
+            <remote-alias>Fraud</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Claim Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Claim Type]</local-name>
+            <parent-name>[pivoted_avg_reimbursement.csv]</parent-name>
+            <remote-alias>Claim Type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Reimbursement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Reimbursement]</local-name>
+            <parent-name>[pivoted_avg_reimbursement.csv]</parent-name>
+            <remote-alias>Average Reimbursement</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fraud Label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fraud Label]</local-name>
+            <parent-name>[pivoted_avg_reimbursement.csv]</parent-name>
+            <remote-alias>Fraud Label</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Fraud Label]' role='dimension' type='nominal' />
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Provider]' role='dimension' type='nominal' />
+      <column caption='pivoted_avg_reimbursement.csv' datatype='table' name='[__tableau_internal_object_id__].[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]' role='measure' type='quantitative' />
+      <column-instance column='[Fraud Label]' derivation='None' name='[none:Fraud Label:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kikas/AppData/Local/Temp/TableauTemp/#TableauTemp_1ed7w5c18bl9v11bbj6pm0z0ggxp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/25/2025 07:50:51 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Provider</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Provider]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Provider</remote-alias>
+              <ordinal>0</ordinal>
+              <family>pivoted_avg_reimbursement.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4083</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fraud</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fraud]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fraud</remote-alias>
+              <ordinal>1</ordinal>
+              <family>pivoted_avg_reimbursement.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Claim Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Claim Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Claim Type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>pivoted_avg_reimbursement.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Average Reimbursement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Average Reimbursement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Average Reimbursement</remote-alias>
+              <ordinal>3</ordinal>
+              <family>pivoted_avg_reimbursement.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2656</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fraud Label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fraud Label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fraud Label</remote-alias>
+              <ordinal>4</ordinal>
+              <family>pivoted_avg_reimbursement.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Fraud Label:nk]' type='palette'>
+            <map to='#309143'>
+              <bucket>&quot;Non-Fraudulent&quot;</bucket>
+            </map>
+            <map to='#b60a1c'>
+              <bucket>&quot;Fraudulent&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='pivoted_avg_reimbursement.csv' id='pivoted_avg_reimbursement.csv_51666701929A4B0CA738E9875022D241'>
+            <properties context=''>
+              <relation connection='textscan.13gka820w5x7wl1clv3iq1t37dpy' name='pivoted_avg_reimbursement.csv' table='[pivoted_avg_reimbursement#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Provider' ordinal='0' />
+                  <column datatype='integer' name='Fraud' ordinal='1' />
+                  <column datatype='string' name='Claim Type' ordinal='2' />
+                  <column datatype='real' name='Average Reimbursement' ordinal='3' />
+                  <column datatype='string' name='Fraud Label' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='final_dataset_for_tableau' inline='true' name='federated.0j54wjy1vyi7h81cuea9g0sxngjz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='final_dataset_for_tableau' name='textscan.1typ7vr0ll99s91ghqi0f0qrrn4v'>
+            <connection class='textscan' directory='C:/Users/kikas/OneDrive/projects/Capstone Project - HealthInsurance Fraud/notebooks' filename='final_dataset_for_tableau.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1typ7vr0ll99s91ghqi0f0qrrn4v' name='final_dataset_for_tableau.csv' table='[final_dataset_for_tableau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Provider' ordinal='0' />
+            <column datatype='string' name='PotentialFraud' ordinal='1' />
+            <column datatype='integer' name='Fraud' ordinal='2' />
+            <column datatype='integer' name='InpatientClaimCount' ordinal='3' />
+            <column datatype='real' name='AvgInpatientReimbursement' ordinal='4' />
+            <column datatype='real' name='TotalInpatientReimbursement' ordinal='5' />
+            <column datatype='real' name='AvgInpatientDeductible' ordinal='6' />
+            <column datatype='real' name='AvgLengthOfStay' ordinal='7' />
+            <column datatype='integer' name='OutpatientClaimCount' ordinal='8' />
+            <column datatype='real' name='AvgOutpatientReimbursement' ordinal='9' />
+            <column datatype='real' name='TotalOutpatientReimbursement' ordinal='10' />
+            <column datatype='real' name='AvgOutpatientDeductible' ordinal='11' />
+            <column datatype='integer' name='TotalClaimCount' ordinal='12' />
+            <column datatype='real' name='TotalReimbursement' ordinal='13' />
+            <column datatype='real' name='InpatientToOutpatientRatio' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Provider</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Provider]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>Provider</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PotentialFraud</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PotentialFraud]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>PotentialFraud</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fraud</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fraud]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>Fraud</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InpatientClaimCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[InpatientClaimCount]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>InpatientClaimCount</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgInpatientReimbursement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgInpatientReimbursement]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>AvgInpatientReimbursement</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalInpatientReimbursement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalInpatientReimbursement]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>TotalInpatientReimbursement</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgInpatientDeductible</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgInpatientDeductible]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>AvgInpatientDeductible</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgLengthOfStay</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgLengthOfStay]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>AvgLengthOfStay</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OutpatientClaimCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OutpatientClaimCount]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>OutpatientClaimCount</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgOutpatientReimbursement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgOutpatientReimbursement]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>AvgOutpatientReimbursement</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalOutpatientReimbursement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalOutpatientReimbursement]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>TotalOutpatientReimbursement</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AvgOutpatientDeductible</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AvgOutpatientDeductible]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>AvgOutpatientDeductible</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalClaimCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalClaimCount]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>TotalClaimCount</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalReimbursement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalReimbursement]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>TotalReimbursement</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InpatientToOutpatientRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[InpatientToOutpatientRatio]</local-name>
+            <parent-name>[final_dataset_for_tableau.csv]</parent-name>
+            <remote-alias>InpatientToOutpatientRatio</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Avg Inpatient Deductible' datatype='real' name='[AvgInpatientDeductible]' role='measure' type='quantitative' />
+      <column caption='Avg Inpatient Reimbursement' datatype='real' name='[AvgInpatientReimbursement]' role='measure' type='quantitative' />
+      <column caption='Avg Length Of Stay' datatype='real' name='[AvgLengthOfStay]' role='measure' type='quantitative' />
+      <column caption='Avg Outpatient Deductible' datatype='real' name='[AvgOutpatientDeductible]' role='measure' type='quantitative' />
+      <column caption='Avg Outpatient Reimbursement' datatype='real' name='[AvgOutpatientReimbursement]' role='measure' type='quantitative' />
+      <column caption='Fraud Label' datatype='string' name='[Calculation_1888415679696351234]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Fraud] = 1 THEN &quot;Fraudulent&quot; ELSE &quot;Non-Fraudulent&quot; END' />
+      </column>
+      <column caption='Inpatient Claim Count' datatype='integer' name='[InpatientClaimCount]' role='measure' type='quantitative' />
+      <column caption='Inpatient To Outpatient Ratio' datatype='real' name='[InpatientToOutpatientRatio]' role='measure' type='quantitative' />
+      <column caption='Outpatient Claim Count' datatype='integer' name='[OutpatientClaimCount]' role='measure' type='quantitative' />
+      <column caption='Potential Fraud' datatype='string' name='[PotentialFraud]' role='dimension' type='nominal' />
+      <column caption='Total Claim Count' datatype='integer' name='[TotalClaimCount]' role='measure' type='quantitative' />
+      <column caption='Total Inpatient Reimbursement' datatype='real' name='[TotalInpatientReimbursement]' role='measure' type='quantitative' />
+      <column caption='Total Outpatient Reimbursement' datatype='real' name='[TotalOutpatientReimbursement]' role='measure' type='quantitative' />
+      <column caption='Total Reimbursement' datatype='real' name='[TotalReimbursement]' role='measure' type='quantitative' />
+      <column caption='final_dataset_for_tableau.csv' datatype='table' name='[__tableau_internal_object_id__].[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_1888415679696351234]' derivation='None' name='[none:Calculation_1888415679696351234:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kikas/AppData/Local/Temp/TableauTemp/#TableauTemp_1nzkq8f0l5j9471fs9by01vl1stg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/25/2025 07:51:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Provider</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Provider]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Provider</remote-alias>
+              <ordinal>0</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5410</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PotentialFraud</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PotentialFraud]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PotentialFraud</remote-alias>
+              <ordinal>1</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fraud</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fraud]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fraud</remote-alias>
+              <ordinal>2</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InpatientClaimCount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[InpatientClaimCount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InpatientClaimCount</remote-alias>
+              <ordinal>3</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>122</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AvgInpatientReimbursement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AvgInpatientReimbursement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AvgInpatientReimbursement</remote-alias>
+              <ordinal>4</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>585</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalInpatientReimbursement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalInpatientReimbursement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalInpatientReimbursement</remote-alias>
+              <ordinal>5</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>442</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AvgInpatientDeductible</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AvgInpatientDeductible]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AvgInpatientDeductible</remote-alias>
+              <ordinal>6</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AvgLengthOfStay</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AvgLengthOfStay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AvgLengthOfStay</remote-alias>
+              <ordinal>7</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>497</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OutpatientClaimCount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OutpatientClaimCount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OutpatientClaimCount</remote-alias>
+              <ordinal>8</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>426</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AvgOutpatientReimbursement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AvgOutpatientReimbursement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AvgOutpatientReimbursement</remote-alias>
+              <ordinal>9</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2266</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalOutpatientReimbursement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalOutpatientReimbursement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalOutpatientReimbursement</remote-alias>
+              <ordinal>10</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1740</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AvgOutpatientDeductible</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AvgOutpatientDeductible]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AvgOutpatientDeductible</remote-alias>
+              <ordinal>11</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1051</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalClaimCount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalClaimCount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalClaimCount</remote-alias>
+              <ordinal>12</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>438</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalReimbursement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalReimbursement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalReimbursement</remote-alias>
+              <ordinal>13</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2224</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InpatientToOutpatientRatio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[InpatientToOutpatientRatio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InpatientToOutpatientRatio</remote-alias>
+              <ordinal>14</ordinal>
+              <family>final_dataset_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>580</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_1888415679696351234:nk]' type='palette'>
+            <map to='#51b364'>
+              <bucket>&quot;Non-Fraudulent&quot;</bucket>
+            </map>
+            <map to='#b60a1c'>
+              <bucket>&quot;Fraudulent&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='final_dataset_for_tableau.csv' id='final_dataset_for_tableau.csv_DA647CD113BF444DB535E4C26C412E48'>
+            <properties context=''>
+              <relation connection='textscan.1typ7vr0ll99s91ghqi0f0qrrn4v' name='final_dataset_for_tableau.csv' table='[final_dataset_for_tableau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Provider' ordinal='0' />
+                  <column datatype='string' name='PotentialFraud' ordinal='1' />
+                  <column datatype='integer' name='Fraud' ordinal='2' />
+                  <column datatype='integer' name='InpatientClaimCount' ordinal='3' />
+                  <column datatype='real' name='AvgInpatientReimbursement' ordinal='4' />
+                  <column datatype='real' name='TotalInpatientReimbursement' ordinal='5' />
+                  <column datatype='real' name='AvgInpatientDeductible' ordinal='6' />
+                  <column datatype='real' name='AvgLengthOfStay' ordinal='7' />
+                  <column datatype='integer' name='OutpatientClaimCount' ordinal='8' />
+                  <column datatype='real' name='AvgOutpatientReimbursement' ordinal='9' />
+                  <column datatype='real' name='TotalOutpatientReimbursement' ordinal='10' />
+                  <column datatype='real' name='AvgOutpatientDeductible' ordinal='11' />
+                  <column datatype='integer' name='TotalClaimCount' ordinal='12' />
+                  <column datatype='real' name='TotalReimbursement' ordinal='13' />
+                  <column datatype='real' name='InpatientToOutpatientRatio' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Claim count by Fraud Status'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution of Total Claim Count by Fraud Status</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_dataset_for_tableau' name='federated.0j54wjy1vyi7h81cuea9g0sxngjz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j54wjy1vyi7h81cuea9g0sxngjz'>
+            <column caption='Fraud Label' datatype='string' name='[Calculation_1888415679696351234]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Fraud] = 1 THEN &quot;Fraudulent&quot; ELSE &quot;Non-Fraudulent&quot; END' />
+            </column>
+            <column datatype='integer' name='[Fraud]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Provider]' role='dimension' type='nominal' />
+            <column caption='Total Claim Count' datatype='integer' name='[TotalClaimCount]' role='measure' type='quantitative' />
+            <column-instance column='[TotalClaimCount]' derivation='CountD' name='[ctd:TotalClaimCount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1888415679696351234]' derivation='None' name='[none:Calculation_1888415679696351234:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Provider]' derivation='None' name='[none:Provider:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TotalClaimCount]' derivation='None' name='[none:TotalClaimCount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]' value='382' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]' />
+              <lod column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Provider:nk]' />
+              <tooltip column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[ctd:TotalClaimCount:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:TotalClaimCount:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:TotalClaimCount:qk]' z-order='1' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:TotalClaimCount:qk]</rows>
+        <cols>[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]</cols>
+      </table>
+      <simple-id uuid='{BD9CFB4D-1596-49AF-850B-0F286BE840A3}' />
+    </worksheet>
+    <worksheet name='Distribution Fraud vs Non-Fraud'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Distribution of Fraudulent vs Non-Fraudulent Providers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pivoted_avg_reimbursement' name='federated.178orao0z82ku41fk2zo003v98og' />
+          </datasources>
+          <datasource-dependencies datasource='federated.178orao0z82ku41fk2zo003v98og'>
+            <column datatype='string' name='[Fraud Label]' role='dimension' type='nominal' />
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Provider]' role='dimension' type='nominal' />
+            <column-instance column='[Fraud Label]' derivation='None' name='[none:Fraud Label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Provider]' derivation='CountD' name='[pcto:ctd:Provider:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]' value='219' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.178orao0z82ku41fk2zo003v98og].[pcto:ctd:Provider:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.178orao0z82ku41fk2zo003v98og].[pcto:ctd:Provider:qk]</rows>
+        <cols>[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]</cols>
+      </table>
+      <simple-id uuid='{CE66D05C-5497-4FE9-9369-661773352ACB}' />
+    </worksheet>
+    <worksheet name='Inpatient to Outpatient Ratio by Fraud Status'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final_dataset_for_tableau' name='federated.0j54wjy1vyi7h81cuea9g0sxngjz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j54wjy1vyi7h81cuea9g0sxngjz'>
+            <column caption='Fraud Label' datatype='string' name='[Calculation_1888415679696351234]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Fraud] = 1 THEN &quot;Fraudulent&quot; ELSE &quot;Non-Fraudulent&quot; END' />
+            </column>
+            <column datatype='integer' name='[Fraud]' role='measure' type='quantitative' />
+            <column caption='Inpatient To Outpatient Ratio' datatype='real' name='[InpatientToOutpatientRatio]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Provider]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1888415679696351234]' derivation='None' name='[none:Calculation_1888415679696351234:nk]' pivot='key' type='nominal' />
+            <column-instance column='[InpatientToOutpatientRatio]' derivation='None' name='[none:InpatientToOutpatientRatio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Provider]' derivation='None' name='[none:Provider:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]' value='340' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]' />
+              <lod column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Provider:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:InpatientToOutpatientRatio:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:InpatientToOutpatientRatio:qk]' z-order='1' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:InpatientToOutpatientRatio:qk]</rows>
+        <cols>[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]</cols>
+      </table>
+      <simple-id uuid='{01B0A099-6B84-47F3-9018-5B8071C313EF}' />
+    </worksheet>
+    <worksheet name='Reimbursement by Claim and Fraud Status'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Reimbursement by Claim Type and Fraud Status</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pivoted_avg_reimbursement' name='federated.178orao0z82ku41fk2zo003v98og' />
+          </datasources>
+          <datasource-dependencies datasource='federated.178orao0z82ku41fk2zo003v98og'>
+            <column datatype='real' name='[Average Reimbursement]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Claim Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Fraud Label]' role='dimension' type='nominal' />
+            <column-instance column='[Average Reimbursement]' derivation='Avg' name='[avg:Average Reimbursement:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Claim Type]' derivation='None' name='[none:Claim Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fraud Label]' derivation='None' name='[none:Fraud Label:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]' value='220' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.178orao0z82ku41fk2zo003v98og].[avg:Average Reimbursement:qk]</rows>
+        <cols>([federated.178orao0z82ku41fk2zo003v98og].[none:Claim Type:nk] / [federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk])</cols>
+      </table>
+      <simple-id uuid='{A4AC8387-6D74-47E7-8997-F5426DF04FCF}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='75'>
+    <window class='worksheet' name='Distribution Fraud vs Non-Fraud'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.178orao0z82ku41fk2zo003v98og].[none:Claim Type:nk]</field>
+            <field>[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FFB917B8-6DD3-4C89-8370-0C7E50A6E0E0}' />
+    </window>
+    <window class='worksheet' name='Reimbursement by Claim and Fraud Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.178orao0z82ku41fk2zo003v98og].[none:Fraud Label:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D14B8473-1E1C-4A59-8DFE-D4EA5490FB76}' />
+    </window>
+    <window class='worksheet' name='Claim count by Fraud Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]</field>
+            <field>[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Provider:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{648AB34E-1166-4C5E-B285-A6DEEEA52444}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Inpatient to Outpatient Ratio by Fraud Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:InpatientToOutpatientRatio:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Calculation_1888415679696351234:nk]</field>
+            <field>[federated.0j54wjy1vyi7h81cuea9g0sxngjz].[none:Provider:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3EE90C59-DFE2-4E27-A5E1-84F15E6E6B49}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Claim count by Fraud Status' width='192'>
+      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
+      v1pZkAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Distribution Fraud vs Non-Fraud' width='192'>
+      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
+      LLVJ2AAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Inpatient to Outpatient Ratio by Fraud Status' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Reimbursement by Claim and Fraud Status' width='192'>
+      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
+      /bGnFwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
