@@ -47,18 +47,19 @@ Outpatient Data: Claims for outpatient services
 
 Provider Data: Provider-level summary including fraud labels
 
-#Key Variables
+# Key  Variables
 
-|Column Name	                               |     Description                                                     |
-|Provider	                                   |  Unique ID for each healthcare provider                             |
-|InscClaimAmtReimbursed	                     |  Amount reimbursed for an insurance claim                           |
-|AdmissionDt, DischargeDt	                   |  Dates of hospital admission and discharge                          |
-|ClaimID	                                   |  Unique identifier for each claim                                  | 
-|BeneID	                                     |  Unique patient ID                                                  |
-|DOB, DOD	                                   |  Date of birth and (if applicable) date of death                    |
-|ChronicCond_*	                             |  Binary flags indicating chronic conditions (e.g., heart failure)   |
-|AttendingPhysician, OperatingPhysician, etc.|  Physician identifiers                                              |
-|Fraud	                                     |  Label indicating if the provider is flagged for fraud (1=Yes,0=No) |
+| Column Name                     | Description                                                     |
+|----------------------------------|-----------------------------------------------------------------|
+| **Provider**                     | Unique ID for each healthcare provider                         |
+| **InscClaimAmtReimbursed**       | Amount reimbursed for an insurance claim                        |
+| **AdmissionDt, DischargeDt**     | Dates of hospital admission and discharge                       |
+| **ClaimID**                      | Unique identifier for each claim                               |
+| **BeneID**                       | Unique patient ID                                              |
+| **DOB, DOD**                     | Date of birth and (if applicable) date of death                 |
+| **ChronicCond_* **                | Binary flags indicating chronic conditions (e.g., heart failure)|
+| **AttendingPhysician, OperatingPhysician, etc.** | Physician identifiers                           |
+| **Fraud**                         | Label indicating if the provider is flagged for fraud (1=Yes, 0=No)|
 
 Note: Additional derived columns like Age, ClaimDuration, TotalClaims, and AvgReimbursement are calculated during preprocessing and are documented in the respective code sections.
 
@@ -77,7 +78,7 @@ Note: Additional derived columns like Age, ClaimDuration, TotalClaims, and AvgRe
 ### Setup Guide
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/healthcare-fraud-detection.git
+git clone  https://github.com/Kinu34/Health_insurance_fraud.git
 cd healthcare-fraud-detection
 ```
 
